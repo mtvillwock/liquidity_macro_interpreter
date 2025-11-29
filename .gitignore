@@ -1,10 +1,28 @@
-/_build
-/cover
-/deps
-/doc
-/.fetch
-erl_crash.dump
-*.ez
+## ⚙️ `.gitignore`
+
+```gitignore
+# Elixir build artifacts
+/_build/
+/deps/
+/erl_crash.dump
+
+# Compiled files
 *.beam
-/config/*.secret.exs
-.elixir_ls/
+
+# Editor/IDE files
+*.swp
+*.swo
+*.bak
+.DS_Store
+.idea/
+.vscode/
+
+# Environment variables
+.env
+
+# Logs
+/log/
+*.log
+
+# Nerves artifacts
+_firmware/
